@@ -6,7 +6,7 @@ function Testimonial_cards() {
   return (
     <main style={{backgroundColor:'black'}}>
     <div className="  card2 card rounded-md flex flex-col antialiased bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-    <h1 className='skill'>My Skills</h1>
+    <h1 className='skill'  id='ski'>My Skills</h1>
     <InfiniteMovingCards
       items={testimonials}
       direction="right"

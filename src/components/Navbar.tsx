@@ -121,13 +121,14 @@ function Navbar({ className }: { className?: string }) {
             </li> */}
 
                    
-                <Link href={"#check"} className="link" >
-                    <MenuItem  setActive={setActive} active={active} item="Project" />
-                </Link>
-                <Link href={"/proj.tsx"} className="link">
+            
+                <Link href={"#ski"} className="link">
                     <MenuItem setActive={setActive} active={active} item="Skills" />
                 </Link>
-                <Link href={"/"} className="link">
+                <Link href={"#projects"} className="link" >
+                    <MenuItem  setActive={setActive} active={active} item="Project" />
+                </Link>
+                <Link href={"#con"} className="link">
                     <MenuItem  setActive={setActive} active={active} item="Contact"  />
                 </Link>
             </Menu>

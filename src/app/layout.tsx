@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import { ThreeDCardDemo } from '@/components/d-card';
 import Footer from '@/components/footer';
 import { Projects } from "@/components/project";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      {/* <Navbar /> */}
+      <Navbar />
         {children}
        {/* <Footer /> */}
        </body>

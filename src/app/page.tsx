@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Projects } from '@/components/project';
 import Navbar from '@/components/Navbar';
+import Contact from '@/components/contact'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -26,7 +27,6 @@ import { cn } from "@/utils/cn";
 import Link from "next/link"; // Corrected import statement
 import { Nav } from 'react-bootstrap';
 
-
 export default function page() {
 
 const text = Typewriter({
@@ -37,7 +37,7 @@ const text = Typewriter({
   return (
     
    <main>  
-    <Navbar/>
+    
   
     <div className='circlediv' >
       < img src="./circle12.png" alt="" width={380}height={380} className='circle'/>
@@ -54,6 +54,7 @@ const text = Typewriter({
    <Testimonial_cards />
    <Projects/>
    <ThreeDCardDemo />
+   <Contact/>
    <Footer />
    {/* <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, quibusdam excepturi pariatur itaque illum nam similique aspernatur impedit sit repellendus inventore molestias quaerat obcaecati earum necessitatibus incidunt? Quis iusto laborum nemo odit distinctio, at rem, quia asperiores commodi quidem ex? Facilis sint consequatur, facere quo iure at omnis neque soluta optio eos. Aut aperiam rerum, eum adipisci, mollitia dolore quidem quos cupiditate sit ipsam corrupti? Veritatis ipsum quam mollitia tempore fuga, sequi error optio aspernatur molestias repellendus consectetur quis? Dolorum aliquid eveniet minus tenetur sit vitae quam ad magnam explicabo distinctio ipsam hic earum maiores officiis, eius saepe laborum veritatis.</h1>
 <h1 className='check'>bi</h1> */}
