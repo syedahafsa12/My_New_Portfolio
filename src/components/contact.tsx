@@ -88,5 +88,6 @@ const Contact = () => {
   
   );
 }
+Contact.displayName = 'Contact';
 
 export default Contact;
