@@ -1,0 +1,46 @@
+{
+  "homepage": "https://syedahafsa12.github.io/skillchaat",
+  "name": "s.h_website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predeploy": "npm run build",
+    "dev": "next dev",
+    "deploy": "gh-pages -d build",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@tabler/icons-react": "^3.1.0",
+    "@tsparticles/engine": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.23",
+    "next": "14.1.3",
+    "react": "^18",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18",
+    "react-element-to-jsx-string": "^15.0.0",
+    "react-on-screen": "^2.1.1",
+    "react-simple-typewriter": "^5.0.1",
+    "simplex-noise": "^4.0.1",
+    "swiper": "^11.1.0",
+    "tailwind-merge": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.3",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

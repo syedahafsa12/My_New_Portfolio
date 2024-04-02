@@ -1,0 +1,1458 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: Centra;
+	src: url('../components/ui/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: black !important;
+}
+/* body{
+  /* background-image: "url('../banner1.webp');background"; */
+.quote{
+  color: white;
+}
+.skill{
+ color: #ffffff;
+ font-weight: 700;
+ font-size: 40px;
+ margin-bottom: 50px;
+}
+.top-box{
+  margin-top: 110px;
+}
+.circlediv {
+  position: relative;
+}
+.card{
+  margin-top: 20rem;
+}
+@media screen and (max-width:425px )and (min-width:320px) {
+  .head1 {
+    font-size: 30px !important;
+    margin-left: 25px !important;
+    margin-top: 170px !important;
+   }
+   .head2 {
+    font-size: 45px !important;
+    margin-left: 20px !important;
+   }
+   .head3 {
+    font-size: 30px !important;
+    margin-left: 25px !important;
+   }
+   .circle { 
+    width: 250px !important;
+    height: 250px !important;
+    /* margin-left: 0px; */
+    float: left !important;
+    margin-top: 0px !important;
+    /* margin-right: 100px !important; */
+    left: none !important;
+    bottom: -470px !important;
+    position: none !important;
+        transform: translateX(-85%) !important;
+
+   }
+   .card{
+    margin-top: 24rem !important;
+    
+   }
+   
+}
+/************ Projects Css ************/
+.project {
+  padding: 80px 0;
+  position: relative;
+  background-color: black;
+}
+.project h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+.project p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+.project .nav.nav-pills {
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+.project .nav.nav-pills .nav-item {
+  width: 33.33333%;
+}
+.project .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+.link a {
+  text-decoration: none !important;
+ 
+}
+a .link{
+  text-decoration: none !important;
+}
+.project .nav.nav-pills .nav-link{font-size: 12px;}
+.project .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg, #EA8290 100%, #EA8290 100%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.project .nav.nav-pills .nav-link.active::before {
+    width: 100% !important;
+}
+.project .nav.nav-pills .nav-link.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+.nav-link#projects-tabs-tab-second {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#projects-tabs-tab-third {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
+}
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #EA8290 100%, #EA8290 100%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
+
+
+
+
+.typewriter{
+  font-weight: 900 !important;
+  
+}
+.certificate_img {
+
+  /* object-fit: cover; */
+}
+.certificate_card{
+ width: 30rem !important;
+ height: 22rem !important;
+}
+/* @media screen and(min-width:320px)and(max-width:640px){
+  .certificate_card{
+    width: 10rem !important;
+    height: 10rem !important;
+   }
+
+   .certificate_img{
+    width: 300  !important;
+    height: 300 !important;
+   }
+} */
+.footer {
+  /* background-color:#EA8290; */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color:#EA8290; /* Change to the color of your choice */
+}
+
+.copyright {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .social-icons {
+    margin-bottom: 20px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .certificate_card {
+    width: 90vw !important; /* Adjust width as needed */
+    height: auto !important; /* Set height to auto for responsiveness */
+    max-width: 90vw; /* Limit maximum width */
+    max-height: 90vw; /* Limit maximum height */
+    margin: 0 auto; /* Center the card horizontally */
+  }
+
+  .certificate_img {
+    width: 100% !important; /* Set image width to 100% of container */
+    height: auto !important; /* Set image height to auto for responsiveness */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    max-height: 100%; /* Ensure image does not exceed container height */
+    object-fit: cover; /* Maintain aspect ratio while covering container */
+  }
+}
+.circle{
+  float: right;
+  margin-top: 0px;
+  /* margin-bottom: px ; */
+  position: absolute;
+  bottom: -320px; /* Adjust the margin as needed */
+  left: 77%;
+  transform: translateX(-50%);
+}
+
+.renderwords-span{
+  font-size:70px !important;
+  font-family:serif;
+}
+.renderwords{
+  font-size:70px !important;
+  font-family: Centra;
+  margin-right: 0px;
+  
+}
+.renderwords2{
+  font-size:70px !important;
+  font-family: Centra;
+  
+}
+.words{
+  margin-top: 100px;
+  
+}
+/* max-width means that   the   font size is smaller  than the  font size of the source code  file.     */
+@media  screen and (max-width:426px)and (min-width: 320px) {
+  .renderwords{
+    font-size:30px !important;
+  }
+}
+
+body{
+  background-color:black;
+  overflow-x: hidden !important;
+}
+
+
+
+/* #3F72AF */
+.class{
+  background-color:white;
+  text-decoration:none;
+}
+@media screen and (max-width:425)and (min-width:320){
+  .texth{
+    margin-top: 200px;
+  }
+  .box{
+    width: 30px !important;
+    height: 15px !important;
+  }
+  .whitebox {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+p{
+  margin-bottom: 0px !important;
+}
+a{
+  text-decoration: none  !important;
+}
+/* min- is se kam */
+/* #F1EAFF light white */
+/* DBE2EF blue light */
+/* #D0A2F7 good  */
+/* AC87C5 pink */
+/* E0AED0 purple*/
+/* #1A5D1A */
+@media screen and (max-width: 640px) {
+  .typewriter {
+    display: block;
+    white-space: pre-wrap; /* This allows the text to break at spaces */
+  }
+}
+
+@media screen and (min-width:355px)and (max-width:381px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+    font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;
+  }
+  .navbartop{
+    width: 320px !important;
+    margin-left: 12px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 14px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+
+  .hi{
+    font-size: 13px !important;
+    margin-left: 73px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 60px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+@media screen and (min-width:1414px)and (max-width:1440px) {
+  .pic{
+    margin-left: 250px !important;
+  }
+}
+@media screen and (min-width:382px)and (max-width:425px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 20px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 14px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+    margin-left: 72px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 60px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+@media screen and (min-width:390px)and (max-width:425px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 29px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 14px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+    margin-left: 50px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 60px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+@media screen and (min-width:410px)and (max-width:425px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 35px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 14px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+    margin-left: 50px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 60px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+
+@media screen and (min-width:320px)and (max-width:335px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 0px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 14px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+    margin-left: 50px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 50px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+@media screen and (min-width:336px)and (max-width:354px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 5px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 13.5px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+     margin-left: 50px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 50px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+
+
+
+
+
+
+
+@media screen  and (min-width:320px)and (max-width:425px){
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+}
+
+
+
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.top-box{
+  margin-top: 110px;
+}
+
+
+body{
+  background-color:#FD7B07;
+  overflow-x: hidden !important;
+}
+.pic{
+  margin-left: 200px !important;
+
+  width: 900px;
+  height: 150px;
+}
+.pi{
+  z-index: 1000;
+  color: white;
+  font-family:cursive;
+  font-size: larger;
+}
+.button{
+  margin-top: 0px;
+  
+}
+.button:hover{
+  background-color: transparent;
+  color: white;
+}
+
+/* #3F72AF */
+.class{
+  background-color:white;
+}
+@media screen and (max-width:425)and (min-width:320){
+  .texth{
+    margin-top: 200px;
+  }
+  .box{
+    width: 30px !important;
+    height: 15px !important;
+  }
+  .whitebox {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+/* min- is se kam */
+/* #F1EAFF light white */
+/* DBE2EF blue light */
+/* #D0A2F7 good  */
+/* AC87C5 pink */
+/* E0AED0 purple*/
+/* #1A5D1A */
+
+@media screen and (min-width:355px)and (max-width:381px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+    font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;
+  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 15px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 14px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+    margin-left: 73px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 60px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+@media screen and (min-width:1414px)and (max-width:1440px) {
+  .pic{
+    margin-left: 250px !important;
+  }
+}
+@media screen and (min-width:382px)and (max-width:425px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 20px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 14px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+    margin-left: 72px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 60px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+@media screen and (min-width:390px)and (max-width:425px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 29px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 14px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+    margin-left: 50px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 60px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+@media screen and (min-width:410px)and (max-width:425px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 35px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 14px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+    margin-left: 50px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 60px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+
+@media screen and (min-width:320px)and (max-width:335px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 0px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 14px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+    margin-left: 50px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 50px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+@media screen and (min-width:336px)and (max-width:354px) {
+  .h1-contact{
+    font-size: 33px;
+  }
+  .pi{
+font-family: sans-serif;
+    font-weight:normal !important;
+    font-size:14px !important;  }
+  .navbartop{
+    width: 330px !important;
+    margin-left: 5px !important;
+  }
+  .img-nav{
+    margin-left: 0px !important;
+  }
+  .p-text{
+    font-size: 10px;
+    margin-right: 20px !important;
+  }
+  .h4-text{
+    margin-right: 20px !important;
+  }
+  .ins-p{
+    font-size: 13.5px;
+  }
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+  
+  .hi{
+    font-size: 13px !important;
+     margin-left: 50px !important;
+  }
+  .pic{
+    width: 1400px !important ;
+    height: 50px !important;
+    margin-left: 0px !important;
+  }
+  .whitebox {
+    width: 220px !important;
+    height: 90px !important;
+    margin-left: 0px !important;
+  }
+  .featuredcourses{
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+
+  }
+  .instructors{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  }
+  .whychoose{
+    padding-top: 0px !important;
+padding-bottom: 0px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important; 
+  }
+  .foot{
+    display: flex;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+  }
+  .p{
+    font-size: 12px;
+  }
+  .h2{
+font-size: 10px;
+  }
+  .h1{
+font-size: 12px;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  -col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  -col{
+    width: 100%;
+}
+
+}
+
+
+
+
+
+
+
+
+@media screen  and (min-width:320px)and (max-width:425px){
+  .coursebox{
+    width: 270px !important;
+    height: 170px !important;
+  }
+}
+
