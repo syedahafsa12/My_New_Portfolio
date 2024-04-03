@@ -32,7 +32,7 @@ export default function page() {
 const text = Typewriter({
 
   words:['a Web Developer','a Next.js Developer','a UI Designer',],
-  loop:{},
+  loop:true,
 }); 
   return (
     
