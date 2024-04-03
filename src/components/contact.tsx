@@ -55,7 +55,7 @@ const Contact = () => {
 
   return (
     <main> 
-         <h1 style={{ marginLeft:590,marginTop:100,fontSize: '24px', marginBottom: 30 ,color:'white', fontWeight:800}}>Contact Now</h1>
+         <h1 style={{ marginLeft:590,marginTop:100,fontSize: '24px', marginBottom: 30 ,color:'#EA8290', fontWeight:800}} className='conh1'>Contact Now</h1>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
     <div style={{ maxWidth: '600px', margin: '0 10px' }}>
       <form onSubmit={handleSubmit} style={{ padding: '20px', border: '1px solid #ccc', borderRadius: '5px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
